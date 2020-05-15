@@ -57,7 +57,7 @@ export class RocketRollCommand implements ISlashCommand {
         const members = await read.getRoomReader().getMembers(context.getRoom().id);
         const who = members[Math.floor(Math.random() * members.length)];
 
-        const messageText = `Everyboody looks at @${who.username}`;
+        const messageText = `Everybody looks at @${who.username}`;
 
         return await this.sendMessage(context, modify, messageText, this.DEFAULT_AVATAR);
         
