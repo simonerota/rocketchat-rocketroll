@@ -1,0 +1,15 @@
+{
+    "id": "e8d45af7-a6cd-4e12-a74c-1fd158a6a7fa",
+    "version": "1.0.0",
+    "requiredApiVersion": "^1.4.0",
+    "iconFile": "icon.png",
+    "author": {
+        "name": "Simone Rota",
+        "homepage": "https://github.com/simonerota/rocketchat-rocketroll",
+        "support": "https://github.com/simonerota/rocketchat-rocketroll/issues"
+    },
+    "name": "RocketRoll",
+    "nameSlug": "rocketroll",
+    "classFile": "RocketRollApp.ts",
+    "description": "Roll a random number"
+}
