@@ -11,5 +11,6 @@
     "name": "RocketRoll",
     "nameSlug": "rocketroll",
     "classFile": "RocketRollApp.ts",
-    "description": "Roll a random number"
+    "description": "Roll a random number",
+    "implements": []
 }

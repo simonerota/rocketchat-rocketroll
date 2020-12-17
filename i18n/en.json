@@ -1,4 +1,4 @@
 {
   "ROCKETROLL_Command_Description": "Roll a dice, random number or blame someone!",
-  "ROCKETROLL_Command_Params": "d6 | d20 | blame (optional, roll 1-100 if blank)"
+  "ROCKETROLL_Command_Params": "d6 | d20 | blame | coin (optional, roll 1-100 if blank)"
 }

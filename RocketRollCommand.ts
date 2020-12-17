@@ -23,6 +23,8 @@ export class RocketRollCommand implements ISlashCommand {
             case "d6":
             case "d20":
                 return await this.handleDiceRoll(context, read, modify, option);
+            case "coin":
+                return await this.handleCoinRoll(context, read, modify);    
             case "blame":
                 return await this.handleBlameRoll(context, read, modify, persis);
             default:
@@ -39,6 +41,18 @@ export class RocketRollCommand implements ISlashCommand {
         
     }
 
+    private async handleCoinRoll(context: SlashCommandContext, read: IRead, modify: IModify): Promise<void> {
+
+        const random = Math.floor(Math.random()*(2)) + 1;
+        const face = random === 1 ? 'head' : 'tail';
+        const avatar = `https://raw.githubusercontent.com/simonerota/rocketchat-rocketroll/master/assets/coin/${face}.png`;
+
+        const messageText = `@${context.getSender().username} flips a coin... *${face}*!`;
+
+        return await this.sendMessage(context, modify, messageText, avatar);
+        
+    }
+    
     private async handleDiceRoll(context: SlashCommandContext, read: IRead, modify: IModify, mode: string): Promise<void> {
 
         const faces = (mode === "d6" ? 6 : 20);
