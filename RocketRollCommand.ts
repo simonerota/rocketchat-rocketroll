@@ -79,7 +79,7 @@ export class RocketRollCommand implements ISlashCommand {
 
     private async handleWrongParams(context: SlashCommandContext, read: IRead, modify: IModify): Promise<void> {
 
-        const msg = modify.getCreator().startMessage().setText("Wrong command: use _/roll_ or _/roll d6|d20|blame_")
+        const msg = modify.getCreator().startMessage().setText("Wrong command: use _/roll_ or _/roll d6|d20|blame|coin_")
             .setRoom(context.getRoom()).getMessage();
 
         return await modify.getNotifier().notifyUser(context.getSender(), msg);
