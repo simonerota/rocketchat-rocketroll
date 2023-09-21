@@ -1,0 +1,4 @@
+{
+  "rocketroll-command-description": "Roll a dice, number, blame someone! Ask something to the 8-ball.",
+  "rocketroll-command-params": "d6 | d20 | blame | coin | 8ball Your question. No args for a number 1-100"
+}

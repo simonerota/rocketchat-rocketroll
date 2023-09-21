@@ -1,12 +1,10 @@
 import { IHttp, IModify, IPersistence, IRead } from '@rocket.chat/apps-engine/definition/accessors';
 import { ISlashCommand, SlashCommandContext } from '@rocket.chat/apps-engine/definition/slashcommands';
-import { App } from '@rocket.chat/apps-engine/definition/App';
-import { IUser } from '@rocket.chat/apps-engine/definition/users';
 
 export class RocketRollCommand implements ISlashCommand {
     public command = 'roll';
-    public i18nParamsExample = 'ROCKETROLL_Command_Params';
-    public i18nDescription = 'ROCKETROLL_Command_Description';
+    public i18nParamsExample = 'rocketroll-command-params';
+    public i18nDescription = 'rocketroll-command-description';
     public providesPreview = false;
 
     public DEFAULT_AVATAR = "https://raw.githubusercontent.com/simonerota/rocketchat-rocketroll/master/assets/generic/default.png"
